@@ -264,37 +264,106 @@
       <section class="app-card" id="screenshots">
         <h2><i class="fas fa-desktop"></i> App Screenshots</h2>
         <div class="app-gallery">
-          <div class="gallery-item">
+          <div
+            class="gallery-item"
+            data-src="images/app-screenshots/chat.png"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal"
+          >
             <img
               src="images/app-screenshots/chat.png"
               alt="RAG Chat Interface"
             />
           </div>
-          <div class="gallery-item">
+          <div
+            class="gallery-item"
+            data-src="images/app-screenshots/view-documents.png"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal"
+          >
             <img
-              src="images/app-screenshots/policy.png"
+              src="images/app-screenshots/view-documents.png"
+              alt="Document View"
+            />
+          </div>
+          <div
+            class="gallery-item"
+            data-src="images/app-screenshots/policy-upload.png"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal"
+          >
+            <img
+              src="images/app-screenshots/policy-upload.png"
+              alt="Policy Upload"
+            />
+          </div>
+          <div
+            class="gallery-item"
+            data-src="images/app-screenshots/policy-pending-upload.png"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal"
+          >
+            <img
+              src="images/app-screenshots/policy-pending-upload.png"
               alt="Policy Management"
             />
           </div>
-          <div class="gallery-item">
-            <img src="screenshots/3.png" alt="Questionnaire Mode" />
+          <div
+            class="gallery-item"
+            data-src="images/app-screenshots/upload-approval.png"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal"
+          >
+            <img
+              src="images/app-screenshots/upload-approval.png"
+              alt="Upload Approval Workflow"
+            />
           </div>
-          <div class="gallery-item">
-            <img src="screenshots/4.png" alt="Prompt Management" />
+          <div
+            class="gallery-item"
+            data-src="images/app-screenshots/questionnaire-upload.png"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal"
+          >
+            <img
+              src="images/app-screenshots/questionnaire-upload.png"
+              alt="Questionnaire Upload"
+            />
           </div>
-          <div class="gallery-item">
-            <img src="screenshots/5.png" alt="Admin Panel" />
+          <div
+            class="gallery-item"
+            data-src="images/app-screenshots/questionnaire-pending.png"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal"
+          >
+            <img
+              src="images/app-screenshots/questionnaire-pending.png"
+              alt="Pending Questionnaire"
+            />
           </div>
-          <div class="gallery-item">
-            <img src="screenshots/6.png" alt="Upload Approval Workflow" />
+          <div
+            class="gallery-item"
+            data-src="images/app-screenshots/questionnaire-completed.png"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal"
+          >
+            <img
+              src="images/app-screenshots/questionnaire-completed.png"
+              alt="Completed Questionnaire"
+            />
+          </div>
+          <div
+            class="gallery-item"
+            data-src="images/app-screenshots/prompts.png"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal"
+          >
+            <img
+              src="images/app-screenshots/prompts.png"
+              alt="Prompt Management"
+            />
           </div>
         </div>
-        <p class="gallery-note">
-          <i class="fas fa-info-circle"></i> Add your screenshots to the
-          <code>screenshots/</code> directory named <code>1.png</code>,
-          <code>2.png</code>, etc. — update the <code>alt</code> text to
-          describe each screen.
-        </p>
       </section>
 
       <!-- Video Presentation -->
@@ -318,6 +387,23 @@
       </div>
     </footer>
 
+    <!-- Image Lightbox Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body p-0 text-center">
+            <button
+              type="button"
+              class="btn-close btn-close-white ms-auto d-block mb-2"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <img id="modalImage" src="" alt="" class="img-fluid rounded" />
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -327,6 +413,14 @@
             .querySelector(this.getAttribute("href"))
             .scrollIntoView({ behavior: "smooth" });
         });
+      });
+
+      const imageModal = document.getElementById("imageModal");
+      imageModal.addEventListener("show.bs.modal", function (e) {
+        const trigger = e.relatedTarget;
+        document.getElementById("modalImage").src = trigger.dataset.src;
+        document.getElementById("modalImage").alt =
+          trigger.querySelector("img").alt;
       });
     </script>
   </body>

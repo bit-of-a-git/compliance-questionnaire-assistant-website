@@ -374,10 +374,6 @@ main.container {
   overflow: hidden;
   border: 1px solid var(--border);
   background: #0a0d12;
-  aspect-ratio: 16 / 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .gallery-item img {
@@ -389,28 +385,7 @@ main.container {
 }
 
 .gallery-item:hover img {
-  transform: scale(1.03);
-}
-
-.gallery-note {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  margin-top: 0.5rem;
-  margin-bottom: 0 !important;
-}
-
-.gallery-note i {
-  color: var(--accent);
-  margin-right: 0.3rem;
-}
-
-.gallery-note code {
-  background: rgba(255, 255, 255, 0.06);
-  padding: 0.1rem 0.35rem;
-  border-radius: 4px;
-  font-size: 0.78rem;
-  color: var(--accent);
-  font-family: "Courier New", Courier, monospace;
+  transform: scale(1.05);
 }
 
 /* ===========================
