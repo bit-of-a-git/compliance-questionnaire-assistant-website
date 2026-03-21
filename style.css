@@ -89,12 +89,6 @@ a:hover {
 /* ===========================
    Header
 =========================== */
-.app-header {
-  background: var(--card-bg);
-  border-bottom: 1px solid var(--border);
-  padding: 3rem 0 2.5rem;
-  margin: 1.5rem 3rem 0;
-}
 
 .profile-img {
   width: 150px;
@@ -373,6 +367,8 @@ main.container {
   overflow: hidden;
   border: 1px solid var(--border);
   background: #0a0d12;
+  cursor: pointer;
+  aspect-ratio: 16 / 9;
 }
 
 .gallery-item img {
