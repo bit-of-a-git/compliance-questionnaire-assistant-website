@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compliance Questionnaire Assistant | Project Showcase</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="top-navbar">
+      <div class="container">
+        <div class="nav-container">
+          <a href="#project-info" class="nav-link"
+            ><i class="fas fa-info-circle"></i> Project Info</a
+          >
+          <a href="#tech-stack" class="nav-link"
+            ><i class="fas fa-cogs"></i> Tech Stack</a
+          >
+          <a href="#screenshots" class="nav-link"
+            ><i class="fas fa-desktop"></i> Screenshots</a
+          >
+          <a href="#video" class="nav-link"
+            ><i class="fas fa-video"></i> Video</a
+          >
+          <a href="#links" class="nav-link"
+            ><i class="fas fa-link"></i> Links</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="app-header">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <div class="col-md-3 text-center">
+            <div class="profile-placeholder">
+              <i class="fas fa-user"></i>
+            </div>
+            <!-- To use a photo, replace the div above with:
+               <img src="images/profile.jpg" alt="Profile" class="profile-img"> -->
+          </div>
+          <div class="col-md-9">
+            <div class="project-titles">
+              <div class="title-group">
+                <span class="title-label">Commercial Title:</span>
+                <p class="commercial-title">
+                  Compliance Questionnaire Assistant
+                </p>
+              </div>
+              <div class="title-group">
+                <span class="title-label">Academic Title:</span>
+                <p class="academic-title">
+                  AI-Powered Web App Enabling Quick Completion of Security
+                  Questionnaires using RAG
+                </p>
+              </div>
+            </div>
+
+            <div class="student-info-container">
+              <h3 class="info-heading">Student Information</h3>
+              <ul class="student-info-list">
+                <li><span class="info-label">Name:</span>David O' Connor</li>
+                <li><span class="info-label">Student ID:</span>08566496</li>
+                <li>
+                  <span class="info-label">Program:</span>Higher Diploma in
+                  Computing
+                </li>
+                <li><span class="info-label">Email:</span>08566496@setu.ie</li>
+                <li><span class="info-label">Year:</span>2024</li>
+                <li>
+                  <span class="info-label">Supervisor:</span>Richard Lacey
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+      <!-- Project Info + Links Row -->
+      <section id="project-info">
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <div class="app-card h-100">
+              <h2><i class="fas fa-info-circle"></i> Project Info</h2>
+              <p>
+                The Compliance Questionnaire Assistant (CQA) is a web
+                application designed to streamline the vendor onboarding process
+                at ServisBOT. When new clients wish to start using our services,
+                they typically send us security questionnaires to evaluate our
+                security posture. To complete these questionnaires, the security
+                team spends significant time searching through policies. The CQA
+                addresses this by allowing users to upload documentation and
+                generate AI-powered answers which reference this documentation,
+                saving the team time and effort.
+              </p>
+              <p>
+                The application makes extensive use of both serverless and
+                managed service technologies, including Lambda, DynamoDB, and
+                S3. The central technology used is Amazon Bedrock Knowledge
+                Base, which takes care of RAG processes such as document
+                indexing, retrieval, and answer generation.
+              </p>
+              <p>
+                As a security-related app, the CQA was built with a
+                security-first mindset. The app is protected by Amazon Cognito,
+                and uses presigned URLs for document views and uploads. The app
+                also features a bulk questionnaire mode, prompt management, and
+                policy versioning.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4" id="links">
+            <div class="app-card h-100">
+              <h2><i class="fas fa-link"></i> Project Links</h2>
+              <div class="app-links">
+                <a href="[FINAL_REPORT_URL]" class="app-link" target="_blank">
+                  <i class="fas fa-file-alt"></i> Final Report
+                </a>
+                <a
+                  href="[VIDEO_PRESENTATION_URL]"
+                  class="app-link"
+                  target="_blank"
+                >
+                  <i class="fab fa-youtube"></i> Video Presentation
+                </a>
+                <a href="[LIVE_DEMO_URL]" class="app-link" target="_blank">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tech Stack -->
+      <div class="app-card" id="tech-stack">
+        <h2><i class="fas fa-cogs"></i> Tech Stack</h2>
+
+        <div class="tech-group-label">Frontend</div>
+        <div class="tech-icons-container">
+          <div class="tech-icon">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+              alt="React"
+            />
+            <span>React</span>
+          </div>
+          <div class="tech-icon">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+              alt="TypeScript"
+            />
+            <span>TypeScript</span>
+          </div>
+          <div class="tech-icon">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg"
+              alt="Material UI"
+            />
+            <span>Material UI</span>
+          </div>
+        </div>
+
+        <div class="tech-group-label">Backend</div>
+        <div class="tech-icons-container">
+          <div class="tech-icon">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+              alt="Node.js"
+            />
+            <span>Node.js</span>
+          </div>
+          <div class="tech-icon">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+              alt="Express"
+              class="invert-icon"
+            />
+            <span>Express</span>
+          </div>
+        </div>
+
+        <div class="tech-group-label">AWS &amp; Infrastructure</div>
+        <div class="tech-icons-container">
+          <div class="tech-icon">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+              alt="AWS"
+              class="aws-wordmark"
+            />
+            <span>Bedrock / RAG</span>
+          </div>
+          <div class="tech-icon">
+            <i class="fas fa-bolt aws-icon"></i>
+            <span>Lambda</span>
+          </div>
+          <div class="tech-icon">
+            <i class="fas fa-database aws-icon"></i>
+            <span>S3</span>
+          </div>
+          <div class="tech-icon">
+            <i class="fas fa-exchange-alt aws-icon"></i>
+            <span>SQS</span>
+          </div>
+          <div class="tech-icon">
+            <i class="fas fa-network-wired aws-icon"></i>
+            <span>API Gateway</span>
+          </div>
+          <div class="tech-icon">
+            <i class="fas fa-user-shield aws-icon"></i>
+            <span>Cognito</span>
+          </div>
+          <div class="tech-icon">
+            <i class="fas fa-code-branch aws-icon"></i>
+            <span>CDK</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Screenshots -->
+      <section class="app-card" id="screenshots">
+        <h2><i class="fas fa-desktop"></i> App Screenshots</h2>
+        <div class="app-gallery">
+          <div class="gallery-item">
+            <img
+              src="images/app-screenshots/chat.png"
+              alt="RAG Chat Interface"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="images/app-screenshots/policy.png"
+              alt="Policy Management"
+            />
+          </div>
+          <div class="gallery-item">
+            <img src="screenshots/3.png" alt="Questionnaire Mode" />
+          </div>
+          <div class="gallery-item">
+            <img src="screenshots/4.png" alt="Prompt Management" />
+          </div>
+          <div class="gallery-item">
+            <img src="screenshots/5.png" alt="Admin Panel" />
+          </div>
+          <div class="gallery-item">
+            <img src="screenshots/6.png" alt="Upload Approval Workflow" />
+          </div>
+        </div>
+        <p class="gallery-note">
+          <i class="fas fa-info-circle"></i> Add your screenshots to the
+          <code>screenshots/</code> directory named <code>1.png</code>,
+          <code>2.png</code>, etc. — update the <code>alt</code> text to
+          describe each screen.
+        </p>
+      </section>
+
+      <!-- Video Presentation -->
+      <section class="app-card" id="video">
+        <h2><i class="fas fa-video"></i> Video Presentation</h2>
+        <div class="video-container">
+          <!-- Replace the src value with your YouTube embed URL:
+             e.g. https://www.youtube.com/embed/YOUR_VIDEO_ID -->
+          <iframe
+            src="https://www.youtube.com/embed/[YOUR_VIDEO_ID]"
+            title="Compliance Questionnaire Assistant — Project Presentation"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <div class="container">
+        <p>&copy; 2026 David O' Connor | SETU Computing Showcase</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document
+            .querySelector(this.getAttribute("href"))
+            .scrollIntoView({ behavior: "smooth" });
+        });
+      });
+    </script>
+  </body>
+</html>

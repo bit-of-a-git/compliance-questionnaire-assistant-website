@@ -1,0 +1,430 @@
+/* ===========================
+   Variables & Reset
+=========================== */
+:root {
+  --bg: #0d1117;
+  --card-bg: #161b22;
+  --nav-bg: #090d13;
+  --border: rgba(255, 255, 255, 0.07);
+  --accent: #ff9900;
+  --accent-dim: rgba(255, 153, 0, 0.1);
+  --accent-hover: rgba(255, 153, 0, 0.18);
+  --text: #c9d1d9;
+  --text-muted: #8b949e;
+  --heading: #f0f6fc;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family:
+    "Segoe UI",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+/* ===========================
+   Top Navbar
+=========================== */
+.top-navbar {
+  background: var(--nav-bg);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.top-navbar .container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.5rem 0;
+}
+
+.top-navbar .nav-link {
+  color: var(--text-muted) !important;
+  padding: 0.4rem 0.85rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+.top-navbar .nav-link:hover {
+  color: var(--accent) !important;
+  background: var(--accent-dim);
+}
+
+.top-navbar .nav-link i {
+  margin-right: 0.4rem;
+  font-size: 0.8rem;
+}
+
+/* ===========================
+   Header
+=========================== */
+.app-header {
+  background: linear-gradient(160deg, #0d1117 0%, #161b22 100%);
+  border-bottom: 1px solid var(--border);
+  padding: 3rem 0 2.5rem;
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+  display: block;
+  margin: 0 auto;
+}
+
+.profile-placeholder {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: var(--card-bg);
+  border: 3px solid var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 3.5rem;
+  color: var(--text-muted);
+}
+
+.project-titles {
+  margin-bottom: 1.5rem;
+}
+
+.title-group {
+  margin-bottom: 0.6rem;
+}
+
+.title-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  color: var(--text-muted);
+}
+
+.commercial-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1.2;
+  margin: 0.15rem 0 0;
+}
+
+.academic-title {
+  font-size: 0.975rem;
+  color: var(--heading);
+  font-weight: 400;
+  margin: 0.15rem 0 0;
+}
+
+.student-info-container {
+  border-top: 1px solid var(--border);
+  padding-top: 1.1rem;
+}
+
+.info-heading {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  color: var(--accent);
+  margin-bottom: 0.65rem;
+}
+
+.student-info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.3rem 2rem;
+}
+
+.student-info-list li {
+  font-size: 0.875rem;
+  color: var(--text);
+}
+
+.info-label {
+  color: var(--accent);
+  font-weight: 600;
+  margin-right: 0.35rem;
+}
+
+/* ===========================
+   Container / Main
+=========================== */
+main.container {
+  padding-top: 2rem;
+  padding-bottom: 3.5rem;
+}
+
+/* ===========================
+   Cards
+=========================== */
+.app-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.75rem 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* When inside Bootstrap g-4 rows, let the gutter handle spacing */
+.row.g-4 .app-card {
+  margin-bottom: 0;
+}
+
+.app-card h2 {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--heading);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.app-card h2 i {
+  color: var(--accent);
+  margin-right: 0.5rem;
+}
+
+.app-card p {
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.app-card p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* ===========================
+   Project Links
+=========================== */
+.app-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.app-link {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.65rem 1rem;
+  background: var(--accent-dim);
+  border: 1px solid rgba(255, 153, 0, 0.15);
+  border-radius: 8px;
+  color: var(--text) !important;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.app-link:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent);
+  color: var(--accent) !important;
+}
+
+.app-link i {
+  width: 18px;
+  text-align: center;
+  color: var(--accent);
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+/* ===========================
+   Tech Stack
+=========================== */
+.tech-group-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  color: var(--accent);
+  margin: 1.5rem 0 0.85rem;
+}
+
+.tech-group-label:first-of-type {
+  margin-top: 0.25rem;
+}
+
+.tech-icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.tech-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.45rem;
+  width: 76px;
+  text-align: center;
+}
+
+.tech-icon img {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+}
+
+/* AWS wordmark — tint to accent orange */
+.tech-icon img.aws-wordmark {
+  width: 56px;
+  height: 46px;
+  object-fit: contain;
+  filter: invert(62%) sepia(89%) saturate(600%) hue-rotate(1deg)
+    brightness(102%) contrast(101%);
+}
+
+/* Express icon is black — lighten for dark background */
+.tech-icon img.invert-icon {
+  filter: brightness(0) invert(0.75);
+}
+
+.aws-icon {
+  font-size: 2rem;
+  color: var(--accent);
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-icon span {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  line-height: 1.3;
+}
+
+/* ===========================
+   Screenshots
+=========================== */
+.app-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.gallery-item {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #0a0d12;
+  aspect-ratio: 16 / 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.03);
+}
+
+.gallery-note {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  margin-bottom: 0 !important;
+}
+
+.gallery-note i {
+  color: var(--accent);
+  margin-right: 0.3rem;
+}
+
+.gallery-note code {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  color: var(--accent);
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* ===========================
+   Video
+=========================== */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 ratio */
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #000;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ===========================
+   Footer
+=========================== */
+.app-footer {
+  background: var(--nav-bg);
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 0;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+/* ===========================
+   Section spacing
+=========================== */
+#project-info {
+  margin-bottom: 1.5rem;
+}
