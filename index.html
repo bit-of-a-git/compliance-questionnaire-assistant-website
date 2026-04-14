@@ -189,10 +189,11 @@
                   class="app-link"
                   target="_blank"
                 >
-                  <i class="fas fa-file-alt"></i> Presentation Slides
+                  <i class="fa-solid fa-file-powerpoint"></i> Presentation
+                  Slides
                 </a>
-                <a href="[ASANA_URL]" class="app-link" target="_blank">
-                  <i class="fas fa-file-alt"></i> Asana Board
+                <a href="#asana" class="app-link" target="_blank">
+                  <i class="fa-solid fa-bars-progress"></i> Asana Board
                 </a>
               </div>
             </div>
@@ -300,96 +301,382 @@
       <!-- Screenshots -->
       <section class="app-card" id="screenshots">
         <h2><i class="fas fa-desktop"></i> App Screenshots</h2>
-        <div class="app-gallery">
+        <div class="carousel-wrapper">
           <div
-            class="gallery-item"
-            data-bs-toggle="modal"
-            data-bs-target="#imageModal"
+            id="screenshotsCarousel"
+            class="carousel slide"
+            data-bs-ride="false"
           >
-            <img
-              src="images/app-screenshots/chat.png"
-              alt="RAG Chat Interface"
-            />
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#screenshotsCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#screenshotsCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#screenshotsCarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#screenshotsCarousel"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#screenshotsCarousel"
+                data-bs-slide-to="4"
+                aria-label="Slide 5"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#screenshotsCarousel"
+                data-bs-slide-to="5"
+                aria-label="Slide 6"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#screenshotsCarousel"
+                data-bs-slide-to="6"
+                aria-label="Slide 7"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#screenshotsCarousel"
+                data-bs-slide-to="7"
+                aria-label="Slide 8"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#screenshotsCarousel"
+                data-bs-slide-to="8"
+                aria-label="Slide 9"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                >
+                  <img
+                    src="images/app-screenshots/chat.png"
+                    alt="RAG Chat Interface"
+                  />
+                </div>
+                <div class="carousel-caption d-block">
+                  <p class="mb-0">RAG Chat Interface</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                >
+                  <img
+                    src="images/app-screenshots/view-documents.png"
+                    alt="Document View"
+                  />
+                </div>
+                <div class="carousel-caption d-block">
+                  <p class="mb-0">Document View</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                >
+                  <img
+                    src="images/app-screenshots/policy-upload.png"
+                    alt="Policy Upload"
+                  />
+                </div>
+                <div class="carousel-caption d-block">
+                  <p class="mb-0">Policy Upload</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                >
+                  <img
+                    src="images/app-screenshots/policy-pending-upload.png"
+                    alt="Policy Management"
+                  />
+                </div>
+                <div class="carousel-caption d-block">
+                  <p class="mb-0">Policy Management</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                >
+                  <img
+                    src="images/app-screenshots/upload-approval.png"
+                    alt="Upload Approval Workflow"
+                  />
+                </div>
+                <div class="carousel-caption d-block">
+                  <p class="mb-0">Upload Approval Workflow</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                >
+                  <img
+                    src="images/app-screenshots/questionnaire-upload.png"
+                    alt="Questionnaire Upload"
+                  />
+                </div>
+                <div class="carousel-caption d-block">
+                  <p class="mb-0">Questionnaire Upload</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                >
+                  <img
+                    src="images/app-screenshots/questionnaire-pending.png"
+                    alt="Pending Questionnaire"
+                  />
+                </div>
+                <div class="carousel-caption d-block">
+                  <p class="mb-0">Pending Questionnaire</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                >
+                  <img
+                    src="images/app-screenshots/questionnaire-completed.png"
+                    alt="Completed Questionnaire"
+                  />
+                </div>
+                <div class="carousel-caption d-block">
+                  <p class="mb-0">Completed Questionnaire</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                >
+                  <img
+                    src="images/app-screenshots/prompts.png"
+                    alt="Prompt Management"
+                  />
+                </div>
+                <div class="carousel-caption d-block">
+                  <p class="mb-0">Prompt Management</p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#screenshotsCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#screenshotsCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
+        </div>
+      </section>
+
+      <!-- Asana Board -->
+      <section class="app-card" id="asana">
+        <h2><i class="fas fa-desktop"></i> Asana Board</h2>
+        <div class="carousel-wrapper">
           <div
-            class="gallery-item"
-            data-bs-toggle="modal"
-            data-bs-target="#imageModal"
+            id="asanaCarousel"
+            class="carousel slide"
+            data-bs-ride="false"
           >
-            <img
-              src="images/app-screenshots/view-documents.png"
-              alt="Document View"
-            />
-          </div>
-          <div
-            class="gallery-item"
-            data-bs-toggle="modal"
-            data-bs-target="#imageModal"
-          >
-            <img
-              src="images/app-screenshots/policy-upload.png"
-              alt="Policy Upload"
-            />
-          </div>
-          <div
-            class="gallery-item"
-            data-bs-toggle="modal"
-            data-bs-target="#imageModal"
-          >
-            <img
-              src="images/app-screenshots/policy-pending-upload.png"
-              alt="Policy Management"
-            />
-          </div>
-          <div
-            class="gallery-item"
-            data-bs-toggle="modal"
-            data-bs-target="#imageModal"
-          >
-            <img
-              src="images/app-screenshots/upload-approval.png"
-              alt="Upload Approval Workflow"
-            />
-          </div>
-          <div
-            class="gallery-item"
-            data-bs-toggle="modal"
-            data-bs-target="#imageModal"
-          >
-            <img
-              src="images/app-screenshots/questionnaire-upload.png"
-              alt="Questionnaire Upload"
-            />
-          </div>
-          <div
-            class="gallery-item"
-            data-bs-toggle="modal"
-            data-bs-target="#imageModal"
-          >
-            <img
-              src="images/app-screenshots/questionnaire-pending.png"
-              alt="Pending Questionnaire"
-            />
-          </div>
-          <div
-            class="gallery-item"
-            data-bs-toggle="modal"
-            data-bs-target="#imageModal"
-          >
-            <img
-              src="images/app-screenshots/questionnaire-completed.png"
-              alt="Completed Questionnaire"
-            />
-          </div>
-          <div
-            class="gallery-item"
-            data-bs-toggle="modal"
-            data-bs-target="#imageModal"
-          >
-            <img
-              src="images/app-screenshots/prompts.png"
-              alt="Prompt Management"
-            />
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#asanaCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#asanaCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#asanaCarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#asanaCarousel"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#asanaCarousel"
+                data-bs-slide-to="4"
+                aria-label="Slide 5"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#asanaCarousel"
+                data-bs-slide-to="5"
+                aria-label="Slide 6"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                >
+                  <img src="images/asana/done-1.png" alt="Completed Tasks - Part 1" />
+                </div>
+                <div class="carousel-caption d-block">
+                  <p class="mb-0">Completed Tasks - Part 1</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                >
+                  <img src="images/asana/done-2.png" alt="Completed Tasks - Part 2" />
+                </div>
+                <div class="carousel-caption d-block">
+                  <p class="mb-0">Completed Tasks - Part 2</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                >
+                  <img src="images/asana/done-3.png" alt="Completed Tasks - Part 3" />
+                </div>
+                <div class="carousel-caption d-block">
+                  <p class="mb-0">Completed Tasks - Part 3</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                >
+                  <img src="images/asana/backlog-1.png" alt="Backlog - Part 1" />
+                </div>
+                <div class="carousel-caption d-block">
+                  <p class="mb-0">Backlog - Part 1</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                >
+                  <img src="images/asana/backlog-2.png" alt="Backlog - Part 2" />
+                </div>
+                <div class="carousel-caption d-block">
+                  <p class="mb-0">Backlog - Part 2</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                >
+                  <img src="images/asana/abandoned.png" alt="Abandoned Tasks" />
+                </div>
+                <div class="carousel-caption d-block">
+                  <p class="mb-0">Abandoned Tasks</p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#asanaCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#asanaCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </section>
@@ -435,7 +722,19 @@
               data-bs-dismiss="modal"
               aria-label="Close"
             ></button>
-            <img id="modalImage" src="" alt="" class="img-fluid rounded" />
+            <div class="modal-nav-row">
+              <button
+                id="modalPrev"
+                class="modal-nav-btn"
+                aria-label="Previous"
+              >
+                &#8592;
+              </button>
+              <img id="modalImage" src="" alt="" class="img-fluid rounded" />
+              <button id="modalNext" class="modal-nav-btn" aria-label="Next">
+                &#8594;
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -453,12 +752,53 @@
       });
 
       const imageModal = document.getElementById("imageModal");
+      const appScreenshots = Array.from(
+        document.querySelectorAll("#screenshotsCarousel .gallery-item img"),
+      );
+      const asanaScreenshots = Array.from(
+        document.querySelectorAll("#asanaCarousel .gallery-item img"),
+      );
+      let currentModalImages;
+      let currentCarouselId;
+      let currentModalIndex = 0;
+
+      function navigateModal(index) {
+        currentModalIndex =
+          (index + currentModalImages.length) % currentModalImages.length;
+        const img = currentModalImages[currentModalIndex];
+        document.getElementById("modalImage").src = img.src;
+        document.getElementById("modalImage").alt = img.alt;
+        bootstrap.Carousel.getInstance(
+          document.getElementById(currentCarouselId),
+        ).to(currentModalIndex);
+      }
+
       imageModal.addEventListener("show.bs.modal", function (e) {
         const trigger = e.relatedTarget;
         const img = trigger.querySelector("img");
+        if (asanaScreenshots.includes(img)) {
+          currentModalImages = asanaScreenshots;
+          currentCarouselId = "asanaCarousel";
+        } else {
+          currentModalImages = appScreenshots;
+          currentCarouselId = "screenshotsCarousel";
+        }
+        currentModalIndex = currentModalImages.indexOf(img);
         document.getElementById("modalImage").src = img.src;
-        document.getElementById("modalImage").alt =
-          trigger.querySelector("img").alt;
+        document.getElementById("modalImage").alt = img.alt;
+      });
+
+      document
+        .getElementById("modalPrev")
+        .addEventListener("click", () => navigateModal(currentModalIndex - 1));
+      document
+        .getElementById("modalNext")
+        .addEventListener("click", () => navigateModal(currentModalIndex + 1));
+
+      document.addEventListener("keydown", function (e) {
+        if (!imageModal.classList.contains("show")) return;
+        if (e.key === "ArrowLeft") navigateModal(currentModalIndex - 1);
+        else if (e.key === "ArrowRight") navigateModal(currentModalIndex + 1);
       });
     </script>
   </body>
